@@ -1,7 +1,7 @@
 // import logo from './logo.svg'
 import './App.css'
-import Footer from './Footer.js'
 import Header from './Header'
+import Footer from './Footer.js'
 
 function App() {
 	// const [state, setState] = useState(0)
