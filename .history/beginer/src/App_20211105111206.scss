@@ -1,0 +1,60 @@
+html {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+	outline: none;
+}
+input {
+	line-height: normal;
+}
+label,
+button {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: 500px;
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+		padding: 2rem 0;
+	}
+	.form-label {
+		font-size: 20px;
+	}
+	.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button {
+			width: 90%;
+		}
+		&__size {
+			width: 100px !important;
+		}
+	}
+	.list-group-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
