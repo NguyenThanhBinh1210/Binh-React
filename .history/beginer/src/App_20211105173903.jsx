@@ -2,17 +2,17 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import Register from './pages/Register'
 import StudentManagement from './pages/StudentManagement'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
+			<Switch>
 				<Route path="/register">
 					<Register />
 				</Route>
 				<Route path="/student" component={StudentManagement} />
-			</BrowserRouter>
+			</Switch>
 		</div>
 	)
 }

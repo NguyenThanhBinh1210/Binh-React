@@ -8,11 +8,10 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<Route path="/register">
-					<Register />
-				</Route>
-				<Route path="/student" component={StudentManagement} />
+				<Route path="/register" components={Register} />
+				<Route path="/student" components={StudentManagement} />
 			</BrowserRouter>
+			{/* <StudentManagement /> */}
 		</div>
 	)
 }

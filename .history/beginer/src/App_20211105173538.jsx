@@ -8,10 +8,12 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<Route path="/register">
-					<Register />
-				</Route>
-				<Route path="/student" component={StudentManagement} />
+				<div>
+					<Route path="/register">
+						<Register />
+					</Route>
+					<Route path="/student" component={StudentManagement} />
+				</div>
 			</BrowserRouter>
 		</div>
 	)

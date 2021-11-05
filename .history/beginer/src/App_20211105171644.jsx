@@ -1,18 +1,18 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import Register from './pages/Register'
 import StudentManagement from './pages/StudentManagement'
-import { BrowserRouter, Route } from 'react-router-dom'
+import Register from './pages/Register'
+import { BrowserRouter, Route } from './react-router-dom'
 
 function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<Route path="/register">
-					<Register />
-				</Route>
-				<Route path="/student" component={StudentManagement} />
+				<Route path="/register" components={Register} />
+				<Route path="/student" components={Student} />
 			</BrowserRouter>
+			{/* <StudentManagement /> */}
+			<Register />
 		</div>
 	)
 }
