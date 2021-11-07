@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../App.scss'
+import { useLocation } from 'react-router'
 import Student from '../components/Student'
 import Input from '../components/Input'
 
@@ -8,6 +9,8 @@ export default function StudentManagement() {
 	const [age, setAge] = useState('')
 	const [students, setStudents] = useState([])
 	const [currentStudent, setCurrentStudent] = useState(null)
+	const location = useLocation()
+	console.log(location)
 
 	const handleChange = setFunc => value => setFunc(value)
 

@@ -4,10 +4,11 @@ import { Link, Routes, Route, NavLink } from 'react-router-dom'
 import ProfileInfo from './profileItem/ProfileInfo'
 import ProfilePerchase from './profileItem/ProfilePerchase'
 import NotFound from './NotFound'
+import '../../App.scss'
 
 export default function Profile() {
 	return (
-		<div>
+		<div className="container">
 			<h1>Profile</h1>
 			<ul>
 				<li>

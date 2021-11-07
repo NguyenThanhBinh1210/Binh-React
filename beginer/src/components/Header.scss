@@ -1,0 +1,9 @@
+.list-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	* {
+		margin: 0 10px;
+		list-style: none;
+	}
+}

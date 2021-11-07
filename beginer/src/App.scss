@@ -38,6 +38,13 @@ img {
 		text-transform: uppercase;
 		padding: 2rem 0;
 	}
+	ul {
+		padding-left: 0;
+	}
+	li {
+		list-style: none;
+		text-align: center;
+	}
 	.form-label {
 		font-size: 20px;
 	}

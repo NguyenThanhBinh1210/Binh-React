@@ -11,7 +11,7 @@ import NotFound from './pages/profile/NotFound'
 export const path = {
 	home: '/',
 	register: 'register/',
-	student: 'student/',
+	student: 'student',
 	profile: 'profile/*'
 	// profileInfo: '/profile/info',
 	// profilePerchase: '/profile/perchase'
