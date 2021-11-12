@@ -9,6 +9,7 @@ export default function Header() {
 	useEffect(() => {
 		// console.log(location)
 	}, [location])
+
 	return (
 		<div>
 			<ul className="list-group">

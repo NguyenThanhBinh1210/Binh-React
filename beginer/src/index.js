@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter as Router } from 'react-router-dom'
-
+import { Provider } from 'react-redux'
+import store from './store'
+// import { BrowserRouter as Router } from 'react-router-dom'
 // Chứa tất cả mợi thứ rồi import vào index.html
 ReactDOM.render(
-	<Router>
-		<App />
-	</Router>,
+	// <Router>
+	<React.StrictMode>
+		<Provider store={store}>
+			<App />
+		</Provider>
+	</React.StrictMode>,
+	// </Router>,
 	document.getElementById('root')
 )
 
