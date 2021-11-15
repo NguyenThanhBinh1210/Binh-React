@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf')
+			format('woff2 supports variations'),
+		url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('woff2-variations');
+	font-weight: 100 900;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.4rem;
+	font-weight: 400;
+	font-family: 'Inter', sans-serif;
+}
