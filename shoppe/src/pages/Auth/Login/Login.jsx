@@ -11,6 +11,7 @@ import ErrorMessage from 'src/components/ErrorMessage/ErrorMessage'
 import { useDispatch } from 'react-redux'
 import { unwrapResult } from '@reduxjs/toolkit'
 import { login } from '../auth.slice'
+import { toast } from 'react-toastify'
 
 export default function Login() {
 	const {
@@ -51,6 +52,16 @@ export default function Login() {
 				}
 			}
 		}
+		toast.info('Xin chào quý khách đã quay lại ạ !', {
+			position: 'top-center',
+			autoClose: 3000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			theme: 'colored'
+		})
 	}
 
 	return (

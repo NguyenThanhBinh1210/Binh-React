@@ -14,6 +14,7 @@ import ErrorMessage from 'src/components/ErrorMessage/ErrorMessage'
 // De y import nhe!
 import { register } from '../auth.slice'
 import { unwrapResult } from '@reduxjs/toolkit'
+import { toast } from 'react-toastify'
 // import http from 'src/utils/http'
 export default function Register() {
 	const {
@@ -55,6 +56,16 @@ export default function Register() {
 				}
 			}
 		}
+		toast.info('Chào mừng đến với shop em ạ !', {
+			position: 'top-center',
+			autoClose: 3000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			theme: 'colored'
+		})
 	}
 
 	// console.log(errors)

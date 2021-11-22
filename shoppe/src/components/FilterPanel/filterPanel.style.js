@@ -31,6 +31,10 @@ export const CategoryItem = styled.li`
 			font-weight: 700;
 			color: #ee4d2d;
 		}
+		&:hover {
+			font-weight: 700;
+			color: #ee4d2d;
+		}
 	}
 `
 

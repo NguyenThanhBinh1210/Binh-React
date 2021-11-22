@@ -12,6 +12,7 @@ import Cart from './pages/Cart/Cart'
 import Home from './pages/Home/Home'
 import NotFound from './pages/NotFound/NotFound'
 import ProductDetail from './pages/ProductDetail/ProductDetail'
+
 import User from './pages/User/User'
 
 export default function Router() {
@@ -65,6 +66,7 @@ export default function Router() {
 					</AuthenticatedGuard>
 				}
 			/>
+
 			<Route
 				path={path.cart}
 				element={

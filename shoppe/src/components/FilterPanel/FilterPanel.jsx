@@ -1,6 +1,6 @@
 import React from 'react'
 import { path } from 'src/constants/path'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import RatingStars from '../RatingStar/RatingStar'
 import * as S from './filterPanel.style'
 import PropTypes from 'prop-types'
@@ -89,7 +89,7 @@ export default function FilterPanel({ categories, filters }) {
 			<S.CategoryList>
 				{categories.map(category => (
 					<S.CategoryItem key={category._id}>
-						<NavLink
+						<Link
 							to={path.home + `?category=${category._id}`}
 							isActive={(match, location) => {
 								if (!match) {
@@ -100,7 +100,7 @@ export default function FilterPanel({ categories, filters }) {
 							}}
 						>
 							{category.name}
-						</NavLink>
+						</Link>
 					</S.CategoryItem>
 				))}
 			</S.CategoryList>

@@ -18,8 +18,8 @@ class Http {
 			},
 			({ response }) => {
 				if (response.status === 401) {
-					toast.error('Cần đăng nhập trước khi thêm ', {
-						position: 'top-right',
+					toast.error('Cần đăng nhập trước ạ', {
+						position: 'top-center',
 						autoClose: 4000,
 						hideProgressBar: false,
 						closeOnClick: true,

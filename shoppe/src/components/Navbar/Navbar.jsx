@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { toast } from 'react-toastify'
 import { path } from 'src/constants/path'
 import { useAuthenticated } from 'src/hooks/useAuthenticated'
 import usePopover from 'src/hooks/usePopover'
@@ -12,7 +13,19 @@ export default function Navbar() {
 	const { activePopover, showPopover, hidePopover } = usePopover()
 	const dispatch = useDispatch()
 
-	const handleLogout = () => dispatch(logout())
+	const handleLogout = () => {
+		dispatch(logout())
+		toast.info('Sớm quay lại với shop nha !', {
+			position: 'top-center',
+			autoClose: 3000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			theme: 'colored'
+		})
+	}
 	return (
 		<S.Navbar>
 			<S.NavConnection>

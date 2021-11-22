@@ -74,7 +74,7 @@ export default function Header() {
 					</S.StyleForm>
 					<S.Cart onMouseEnter={showPopover} onMouseLeave={hidePopover}>
 						<S.CartContainer>
-							<S.CartIcon to="">
+							<S.CartIcon to={path.cart}>
 								<svg
 									viewBox="0 0 26.6 25.6"
 									className="shopee-svg-icon navbar__link-icon icon-shopping-cart-2"

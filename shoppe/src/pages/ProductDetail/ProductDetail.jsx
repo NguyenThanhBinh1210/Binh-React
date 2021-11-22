@@ -70,8 +70,8 @@ export default function ProductDetail() {
 		const res = await dispatch(addToCart(body)).then(unwrapResult)
 		await dispatch(getCartPurchases()).then(unwrapResult)
 
-		toast.success(res.message, {
-			position: 'top-right',
+		toast.success('Thêm đơn hàng rồi ạ', {
+			position: 'top-center',
 			autoClose: 4000,
 			hideProgressBar: false,
 			closeOnClick: true,
