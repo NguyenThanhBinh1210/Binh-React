@@ -2,16 +2,14 @@ import { Button } from 'src/assets/styles/utils'
 import styled from 'styled-components'
 
 export const StyledRegister = styled.div`
-	background-color: #2cccff;
+	background-color: rgb(238, 77, 45);
 	min-width: max-content;
 `
 
 export const Container = styled.div`
 	padding: 8rem;
 	display: flex;
-	${
-		'' /* background-image: url(https://cf.shopee.vn/file/5569eb9dc7e09e2dbed5315b8f2ea8ba); */
-	}
+	background-image: url(https://cf.shopee.vn/file/5569eb9dc7e09e2dbed5315b8f2ea8ba);
 	background-size: content;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -60,6 +58,7 @@ export const FormControl = styled.div`
 export const FormButton = styled.div`
 	margin-bottom: 3rem;
 	width: 100%;
+	${'' /* border: none; */}
 	${Button} {
 		border: none;
 		outline: none;

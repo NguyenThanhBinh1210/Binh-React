@@ -60,6 +60,7 @@ export const FormControl = styled.div`
 export const FormButton = styled.div`
 	margin-bottom: 3rem;
 	width: 100%;
+	${'' /* border: none; */}
 	${Button} {
 		border: none;
 		outline: none;

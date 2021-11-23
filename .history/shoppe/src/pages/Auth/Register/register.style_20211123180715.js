@@ -9,9 +9,7 @@ export const StyledRegister = styled.div`
 export const Container = styled.div`
 	padding: 8rem;
 	display: flex;
-	${
-		'' /* background-image: url(https://cf.shopee.vn/file/5569eb9dc7e09e2dbed5315b8f2ea8ba); */
-	}
+	background-image: url(https://cf.shopee.vn/file/5569eb9dc7e09e2dbed5315b8f2ea8ba);
 	background-size: content;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -60,6 +58,7 @@ export const FormControl = styled.div`
 export const FormButton = styled.div`
 	margin-bottom: 3rem;
 	width: 100%;
+	${'' /* border: none; */}
 	${Button} {
 		border: none;
 		outline: none;
