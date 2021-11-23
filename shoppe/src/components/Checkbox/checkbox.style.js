@@ -39,7 +39,7 @@ export const CheckboxInput = styled.input`
 	top: 0;
 	left: 0;
 	:checked ~ ${CheckboxBox} {
-		background: #ee4d2d;
+		background: #2cccff;
 		border-color: #ee4d2d;
 	}
 	:checked ~ ${CheckboxBox}:before {

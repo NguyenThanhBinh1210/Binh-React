@@ -3,7 +3,7 @@ import { Button, ButtonLink } from 'src/assets/styles/utils'
 import styled from 'styled-components'
 
 export const StyleHeader = styled.header`
-	background: linear-gradient(-180deg, #f53d2d, #f63);
+	background: linear-gradient(-180deg, #2cccff, #2cccff);
 	margin-bottom: 3rem;
 	width: 100%;
 	min-width: max-content;
@@ -16,6 +16,9 @@ export const SearchWrapper = styled.div`
 `
 export const Logo = styled(Link)`
 	margin-right: 4rem;
+	font-size: 3rem;
+	font-weight: bold;
+	color: white;
 	svg {
 		width: 162px;
 		height: 50px;
@@ -73,8 +76,8 @@ export const CartNumberBadge = styled.div`
 	min-width: 11px;
 	padding: 0px 5px;
 	text-align: center;
-	border: 2px solid #ee4d2d;
-	color: #ee4d2d;
+	border: 2px solid #2cccff;
+	color: #2cccff;
 	background-color: #fff;
 	line-height: 1;
 	top: 2px;
@@ -113,7 +116,7 @@ export const MiniProductCartTitle = styled.div`
 export const MiniProductCartPrice = styled.div`
 	margin-left: 4rem;
 	flex-shrink: 1;
-	color: #ee4d2d;
+	color: #2cccff;
 `
 export const PopoverFooter = styled.div`
 	display: flex;

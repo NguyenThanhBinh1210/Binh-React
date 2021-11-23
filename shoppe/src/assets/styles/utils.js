@@ -6,7 +6,7 @@ export const Button = styled.button`
 	justify-content: center;
 	align-items: center;
 	height: 3rem;
-	background-color: #ee4d2d;
+	background-color: #2cccff;
 	border-radius: 2px;
 	border: 0;
 	color: #fff;
@@ -17,7 +17,7 @@ export const Button = styled.button`
 		if (!light) {
 			return `
 			&:hover {
-				background-color: #f05d40;
+				background-color: #2cccff;
 			}
 			`
 		}
@@ -40,7 +40,7 @@ export const ButtonLink = styled(Link)`
 	align-items: center;
 	justify-content: center;
 	height: 3rem;
-	background: #ee4d2d;
+	background: #2cccff;
 	border-radius: 2px;
 	border: 0;
 	color: #fff;
@@ -50,7 +50,7 @@ export const ButtonLink = styled(Link)`
 		if (!light) {
 			return `
 			&:hover {
-				background-color: #f05d40;
+				background-color: #2cccff;
 			}
 			`
 		}

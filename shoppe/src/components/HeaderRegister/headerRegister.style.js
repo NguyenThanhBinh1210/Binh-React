@@ -21,11 +21,9 @@ export const HeaderBrand = styled.div`
 
 export const HeaderIcon = styled(Link)`
 	margin-top: 0.5rem;
-	svg {
-		fill: #ee4d2d;
-		height: 4.2rem;
-		width: auto;
-	}
+	font-size: 3rem;
+	font-weight: bold;
+	color: #2cccff;
 `
 
 export const HeaderTitle = styled.div`

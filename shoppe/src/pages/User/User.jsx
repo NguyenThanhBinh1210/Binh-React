@@ -5,9 +5,12 @@ import Password from './Password/Password.jsx'
 import Profile from './Profile/Profile.jsx'
 import * as S from './user.style.js'
 import Loading from 'src/components/Loading/Loading'
+import { useSelector } from 'react-redux'
 
 const Purchase = lazy(() => import('./Purchase/Purchase.jsx'))
 export default function User() {
+	const profile = useSelector(state => state.auth.profile)
+
 	return (
 		<div>
 			<S.Container className="container">
@@ -20,7 +23,7 @@ export default function User() {
 							/>
 						</S.BriefAvatar>
 						<S.BriefRight>
-							<S.BriefUsername>king</S.BriefUsername>
+							<S.BriefUsername>{profile.name}</S.BriefUsername>
 							<S.BriefEdit to="profile/">
 								{' '}
 								<svg
@@ -62,7 +65,7 @@ export default function User() {
 						<S.SidebarMenuEntry to="purchase/">
 							<S.SidebarMenuEntryIcon>
 								<img
-									src="https://cf.shopee.vn/file/ba61750a46794d8847c3f463c5e71cc4"
+									src="https://cf.shopee.vn/file/f0049e9df4e536bc3e7f140d071e9078"
 									alt=""
 								/>
 							</S.SidebarMenuEntryIcon>

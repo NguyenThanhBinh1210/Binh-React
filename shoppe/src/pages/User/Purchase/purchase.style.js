@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { ButtonLink } from 'src/assets/styles/utils'
 import styled from 'styled-components'
 
@@ -22,9 +22,10 @@ export const PurchaseTabItem = styled(NavLink)`
 	align-items: center;
 	justify-content: center;
 	color: inherit;
+	&:hover,
 	&.active {
-		color: #ee4d2d;
-		border-bottom: 2px solid #ee4d2d;
+		color: #08aeea;
+		border-bottom: 2px solid #08aeea;
 	}
 `
 export const PurchaseList = styled.div``
@@ -82,6 +83,6 @@ export const TotalPriceLabel = styled.div`
 	margin-right: 1rem;
 `
 export const TotalPricePrice = styled.div`
-	color: #ee4d2d;
+	color: #2cccff;
 	font-size: 3rem;
 `
