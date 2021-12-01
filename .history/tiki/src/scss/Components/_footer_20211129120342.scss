@@ -1,0 +1,22 @@
+.footer {
+	&__title {
+		font-weight: 600;
+		font-size: 1.6rem;
+		margin-bottom: 12px;
+	}
+	&__content > li {
+		font-size: 1.2rem;
+		color: rgb(128, 128, 137);
+		margin-bottom: 8px;
+		display: flex;
+		img {
+			margin-right: 8px;
+		}
+		div:first-child {
+			margin-right: 8px;
+		}
+	}
+	&__content > span {
+		margin-right: 8px;
+	}
+}

@@ -1,0 +1,101 @@
+.left-menu {
+	width: 100%;
+	max-width: 18%;
+	padding-top: 40px;
+	position: relative;
+	@include mobile {
+		position: fixed;
+		z-index: 101;
+		padding: 20px;
+		left: 0;
+		top: 0;
+		min-width: 200px;
+		height: 100%;
+		overflow: auto;
+		background-color: #f5f5f5;
+		&__search {
+			transform: translateX(-100%);
+		}
+	}
+	&__search {
+		transform: translateX(-100%);
+		transition: all 0.5s ease;
+		border: 1px solid #ccc;
+		width: 95%;
+		margin: 0 auto;
+		border-radius: 100rem;
+		padding: 5px 0;
+		@include flex(center, center);
+		&.active {
+			transform: translateX(0);
+		}
+		i:not(:first-child) {
+			&:hover {
+				color: #78cccd;
+			}
+		}
+		i {
+			font-size: 2rem;
+		}
+		input {
+			border: none;
+			background-color: #f5f5f5;
+			margin: 0 5px;
+			width: 70%;
+		}
+	}
+	& > * {
+		text-align: center;
+	}
+	.logo {
+		font-size: 3rem;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	.list-util {
+		margin-bottom: 30px;
+		@include flex(center, center);
+		& > * {
+			margin-left: 10px;
+			font-size: 2rem;
+			position: relative;
+			&:hover {
+				color: #78cccd;
+				cursor: pointer;
+			}
+			.badge {
+				position: absolute;
+				@include size(13px);
+				background-color: black;
+				top: -3px;
+				border-radius: 100rem;
+				right: -5px;
+				font-size: 1rem;
+				color: white;
+				@include flex(center, center);
+			}
+		}
+	}
+	.list-category {
+		width: 100%;
+		li {
+			padding-top: 8px;
+			padding-bottom: 8px;
+			&:hover {
+				background-color: rgb(241, 241, 241);
+			}
+			& > *:hover {
+				color: #78cccd;
+				text-decoration: underline;
+			}
+		}
+	}
+	.contact {
+		margin-top: 30px;
+		@include flex(center, center);
+		li {
+			margin-right: 8px;
+			font-size: 2rem;
+		}
+	}
+}

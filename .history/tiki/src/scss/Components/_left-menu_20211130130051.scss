@@ -1,0 +1,47 @@
+.left-menu {
+	width: 100%;
+	max-width: 18%;
+	padding-top: 40px;
+
+	& > * {
+		text-align: center;
+	}
+	.logo {
+		font-size: 3rem;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	.list-util {
+		margin-bottom: 30px;
+		@include flex(center, center);
+		& > * {
+			margin-left: 10px;
+			font-size: 2rem;
+			&:hover {
+				color: #78cccd;
+			}
+		}
+	}
+	.list-category {
+		width: 100%;
+		li {
+			padding-top: 8px;
+			padding-bottom: 8px;
+			&:hover {
+				background-color: rgb(241, 241, 241);
+			}
+			& > *:hover {
+				color: #78cccd;
+				text-decoration: underline;
+			}
+		}
+	}
+	.contact {
+		margin-top: 30px;
+		@include flex(center, center);
+		li {
+			margin-right: 8px;
+			font-size: 2rem;
+		}
+	}
+}

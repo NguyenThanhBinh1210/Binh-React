@@ -1,0 +1,51 @@
+.home {
+	width: 100%;
+	max-width: 95%;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+	&__menu {
+		position: absolute;
+		left: 0;
+		background-color: blue;
+		@include size(13px);
+		transform: translateX(-500px);
+		transition: transform 0.4s ease;
+		width: 300px;
+		height: 100vh;
+		top: -100px;
+		&.active {
+			transform: translateX(0);
+		}
+	}
+	&__title {
+		text-align: center;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+	&__main {
+		@include flex(center, space-between);
+	}
+	&__filter {
+		cursor: pointer;
+		&__toggle {
+			@include flex(center, flex-start);
+			i {
+				font-size: 2rem;
+			}
+		}
+	}
+	&__sort {
+		select {
+			padding: 5px 8px;
+			outline: none;
+			border: 1px solid rgb(214, 214, 214);
+			background-color: #f5f5f5;
+			border-radius: 2px;
+			margin-left: 8px;
+			option {
+				padding: 10px;
+			}
+		}
+	}
+}

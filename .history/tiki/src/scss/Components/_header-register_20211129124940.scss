@@ -1,0 +1,33 @@
+header {
+	box-shadow: $box-shadow;
+	padding: 10px 20px;
+}
+.header {
+	@include flex(flex-end, space-between);
+
+	&__brand {
+		@include flex(flex-end, space-between);
+	}
+	&__logo {
+		font-weight: bold;
+		font-size: 3.5rem;
+		color: rgb(26, 148, 255);
+		margin-right: 10px;
+		@include mobile {
+			font-size: 2.2rem;
+		}
+	}
+	&__title {
+		font-size: 2.2rem;
+		@include mobile {
+			font-size: 1.6rem;
+		}
+	}
+	&__help {
+		margin-right: 20px;
+		color: rgb(26, 148, 255);
+		@include mobile {
+			margin-right: 0;
+		}
+	}
+}

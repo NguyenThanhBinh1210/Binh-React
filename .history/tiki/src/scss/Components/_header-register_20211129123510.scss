@@ -1,0 +1,14 @@
+.header {
+	@include flex(flex-start, space-between);
+	&__brand {
+		display: flex;
+	}
+	&__logo {
+		font-weight: bold;
+		font-size: 2rem;
+	}
+	&__help {
+		margin-right: 20px;
+		color: rgb(26, 148, 255);
+	}
+}

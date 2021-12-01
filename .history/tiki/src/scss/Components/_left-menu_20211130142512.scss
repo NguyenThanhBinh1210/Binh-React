@@ -1,0 +1,111 @@
+.left-menu {
+	width: 100%;
+	max-width: 18%;
+	padding-top: 40px;
+	position: relative;
+	.modal {
+		position: absolute;
+		top: 0px;
+		right: -996px;
+		width: 996px;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.3);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.6s ease;
+		@include tablet {
+			width: 900px;
+		}
+		.input-search {
+			position: absolute;
+			width: 500px;
+			height: 75px;
+			background-color: white;
+			left: 50%;
+			top: 10%;
+			transform: translateX(-50%);
+			@include flex(center, center);
+			@include tablet {
+				left: 40%;
+			}
+			input {
+				width: 60%;
+				padding: 7px 10px;
+				margin: 0 8px;
+				outline: none;
+				border: none;
+			}
+			i {
+				font-size: 2rem;
+			}
+
+			i:last-child {
+				color: rgb(177, 177, 177);
+				&:hover {
+					color: black;
+				}
+			}
+		}
+		&.active {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	.input-search {
+		// transform: translateX(-500px);
+		// transition: transform 0.4s ease;
+	}
+	& > * {
+		text-align: center;
+	}
+	.logo {
+		font-size: 3rem;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	.list-util {
+		margin-bottom: 30px;
+		@include flex(center, center);
+		& > * {
+			margin-left: 10px;
+			font-size: 2rem;
+			position: relative;
+			&:hover {
+				color: #78cccd;
+			}
+			.badge {
+				position: absolute;
+				@include size(13px);
+				background-color: black;
+				top: -3px;
+				border-radius: 100rem;
+				right: -5px;
+				font-size: 1rem;
+				color: white;
+				@include flex(center, center);
+			}
+		}
+	}
+	.list-category {
+		width: 100%;
+		li {
+			padding-top: 8px;
+			padding-bottom: 8px;
+			&:hover {
+				background-color: rgb(241, 241, 241);
+			}
+			& > *:hover {
+				color: #78cccd;
+				text-decoration: underline;
+			}
+		}
+	}
+	.contact {
+		margin-top: 30px;
+		@include flex(center, center);
+		li {
+			margin-right: 8px;
+			font-size: 2rem;
+		}
+	}
+}

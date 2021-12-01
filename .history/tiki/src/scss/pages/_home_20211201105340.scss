@@ -1,0 +1,73 @@
+.home {
+	width: 100%;
+	max-width: 95%;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+
+	&__title {
+		text-align: center;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+	&__main {
+		@include flex(center, space-between);
+	}
+	&__filter {
+		cursor: pointer;
+		&__toggle {
+			@include flex(center, flex-start);
+			i {
+				font-size: 2rem;
+			}
+		}
+	}
+	&__sort {
+		select {
+			padding: 5px 8px;
+			outline: none;
+			border: 1px solid rgb(214, 214, 214);
+			background-color: #f5f5f5;
+			border-radius: 2px;
+			margin-left: 8px;
+			option {
+				padding: 10px;
+			}
+		}
+	}
+	.filter-menu {
+		position: fixed;
+		z-index: 101;
+		padding: 20px;
+		left: 0;
+		top: 0;
+		width: 20%;
+		height: 100%;
+		overflow: auto;
+		background-color: white;
+		// background-color: rgb(0, 0, 0);
+		// background-color: rgba($color: #000000, $alpha: 0.4);
+		transform: translateX(-100%);
+		transition: all 0.5s ease;
+		&.active {
+			transform: translateX(0);
+		}
+		&__close {
+			font-size: 2rem;
+			// float: right;
+			position: absolute;
+			right: 20px;
+			cursor: pointer;
+		}
+		&__content {
+			margin-top: 20px;
+			&__category__title-link {
+				font-weight: 700;
+			}
+			&__category__item {
+				font-size: 1.3rem;
+				margin-bottom: 8px;
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.form-wrapper {
+	.link-to {
+		display: flex;
+		flex-direction: column;
+		&::before {
+			content: ' ';
+			width: 100%;
+		}
+	}
+}

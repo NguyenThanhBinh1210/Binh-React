@@ -1,0 +1,14 @@
+.home {
+	&__title {
+		text-align: center;
+		font-weight: 300;
+	}
+	&__filter {
+		&__toggle {
+			@include flex(center, flex-start);
+			i {
+				font-size: 2rem;
+			}
+		}
+	}
+}

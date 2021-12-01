@@ -1,0 +1,10 @@
+.left-menu {
+	width: 100%;
+	max-width: 18%;
+	& > * {
+		text-align: center;
+	}
+	.logo {
+		font-size: 3rem;
+	}
+}

@@ -1,0 +1,14 @@
+.form-control {
+	overflow: hidden;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	input {
+		padding: 7px;
+		border-color: unset;
+		width: 100%;
+	}
+	input:focus {
+		border-color: #78cccd;
+	}
+}

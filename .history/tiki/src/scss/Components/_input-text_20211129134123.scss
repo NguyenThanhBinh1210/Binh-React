@@ -1,0 +1,10 @@
+.form-control {
+	overflow: hidden;
+	border: 1px solid #ddd;
+	input:focus {
+		border-color: #78cccd;
+	}
+	input {
+		border: none;
+	}
+}

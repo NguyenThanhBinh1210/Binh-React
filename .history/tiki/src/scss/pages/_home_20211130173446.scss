@@ -1,0 +1,16 @@
+.home {
+	&__title {
+		text-align: center;
+		font-weight: 300;
+	}
+	&__filter {
+		&__toggle {
+			i {
+				font-size: 2rem;
+			}
+			span {
+				font-size: 2rem;
+			}
+		}
+	}
+}

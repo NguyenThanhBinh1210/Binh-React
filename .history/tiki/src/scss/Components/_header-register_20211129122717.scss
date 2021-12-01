@@ -1,0 +1,6 @@
+.header {
+	@include flex(flex-start, space-between);
+	&__brand {
+		display: flex;
+	}
+}

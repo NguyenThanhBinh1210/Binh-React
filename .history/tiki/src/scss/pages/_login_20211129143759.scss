@@ -1,0 +1,16 @@
+.form-wrapper {
+}
+.link-to {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	&::before {
+		content: '';
+		width: 30%;
+		height: 1px;
+		background-color: #dfdfdf;
+		top: 0;
+		position: absolute;
+	}
+}

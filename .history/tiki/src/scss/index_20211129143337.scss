@@ -1,0 +1,12 @@
+@import './variables';
+@import './mixins';
+@import './base.scss';
+
+@import './utils/button';
+
+@import './Components/footer';
+@import './Components/header-register';
+@import './Components/input';
+
+@import './pages/register';
+@import './pages/login';

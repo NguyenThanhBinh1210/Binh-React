@@ -1,0 +1,28 @@
+.home {
+	width: 100%;
+	max-width: 95%;
+	margin: 0 auto;
+	margin-top: 20px;
+	&__title {
+		text-align: center;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+	&__main {
+		@include flex(center, space-between);
+	}
+	&__filter {
+		cursor: pointer;
+		&__toggle {
+			@include flex(center, flex-start);
+			i {
+				font-size: 2rem;
+			}
+		}
+	}
+	&__sort {
+		select {
+			padding: 10px;
+		}
+	}
+}

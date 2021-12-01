@@ -1,0 +1,27 @@
+.header {
+	@include flex(flex-end, space-between);
+	@include mobile {
+		&__logo {
+			font-size: 2rem;
+		}
+	}
+	&__brand {
+		@include flex(flex-end, space-between);
+	}
+	&__logo {
+		font-weight: bold;
+		font-size: 3.5rem;
+		color: rgb(26, 148, 255);
+		margin-right: 10px;
+	}
+	&__title {
+		font-size: 2.2rem;
+	}
+	&__help {
+		margin-right: 20px;
+		color: rgb(26, 148, 255);
+		@include mobile {
+			margin-right: 0;
+		}
+	}
+}
