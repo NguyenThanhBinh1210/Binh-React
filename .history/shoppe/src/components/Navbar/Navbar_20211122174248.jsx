@@ -30,7 +30,7 @@ export default function Navbar() {
 		<S.Navbar>
 			<S.NavConnection>
 				<S.ConnectLink to="">Kênh người bán</S.ConnectLink>
-				<S.ConnectLink to="">Trở thành người bán KingShop</S.ConnectLink>
+				<S.ConnectLink to="">Trở thành người bán Shopee</S.ConnectLink>
 				<S.ConnectLink to="">Tải ứng dụng</S.ConnectLink>
 				<S.ConnectLink to="">Kết nối</S.ConnectLink>
 			</S.NavConnection>
