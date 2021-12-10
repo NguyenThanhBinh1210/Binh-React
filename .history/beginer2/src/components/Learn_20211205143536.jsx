@@ -1,0 +1,19 @@
+import React, { useState } from "react";
+
+const Learn = () => {
+  const [value, serValue] = useState("");
+  const [todo, setTodo] = useState([]);
+  const handleChange = (e) => {
+    serValue(e.target.value);
+  };
+  console.log(value);
+  return (
+    <div>
+      Learn
+      <input type="text" value={value} onChange={handleChange} />
+      <button>Add</button>
+    </div>
+  );
+};
+
+export default Learn;

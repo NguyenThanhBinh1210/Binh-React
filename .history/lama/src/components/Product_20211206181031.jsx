@@ -1,0 +1,74 @@
+import {
+  FavoriteBorderOutlined,
+  SearchOutlined,
+  ShoppingCartOutlined,
+} from "@material-ui/icons";
+import styled from "styled-components";
+
+// const Info = styled.div`
+//   opacity: 0;
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   background-color: rgba(0, 0, 0, 0.2);
+//   z-index: 3;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   transition: all 0.5s ease;
+//   cursor: pointer;
+// `;
+
+// const Container = styled.div`
+//   margin: 5px;
+//   min-width: 280px;
+//   height: 400px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+//   display: flex;
+//   &:hover ${Info} {
+//     opacity: 1;
+//   }
+// `;
+
+// const Image = styled.img`
+//   ${
+//     "" /* width: 100%;
+//   height: 100%; */
+//   }
+//   z-index: 2;
+// `;
+
+// const Icon = styled.div`
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   background-color: white;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 10px;
+//   transition: all 0.5s ease;
+//   &:hover {
+//     background-color: #e9f5f5;
+//     transform: scale(1.1);
+//   }
+// `;
+
+const Product = () => {
+  return (
+    <div>
+      <img
+        src="https://storage.googleapis.com/cdn.nhanh.vn/store/7136/ps/20210618/18062021030605_1000_x_1500__Dai_dien_thumb.jpg"
+        alt=""
+      />
+    </div>
+  );
+};
+
+export default Product;
